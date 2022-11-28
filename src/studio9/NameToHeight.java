@@ -21,7 +21,17 @@ public class NameToHeight {
 		Scanner in = new Scanner(System.in);
 
 		// FIXME
-		throw new NotYetImplementedException();
+		
+HashMap < String, Integer > nameHeight = new HashMap <String, Integer>();
+nameHeight.put("Fernanda", 67);
+nameHeight.put("Demi", 66);
+nameHeight.put("Esha", 60);
 
+while(in.next() != null) {
+System.out.print("What is your Name?");
+ String name= in.next();
+
+System.out.println("your height is: " + nameHeight.get(name) + " " + "inches");
+	}
 	}
 }
